@@ -32,12 +32,17 @@ Stace-Zi'o = {!!}
 Ka'e-Re'enjeJaCinmoSeZukte : Set
 Ka'e-Re'enjeJaCinmoSeZukte = {!!}
 
+Rinka : Prenu → Ka'e-Re'enjeJaCinmoSeZukte → Set
+Rinka = {!!}
+
 data Re'enjeJaCinmoSeZukte (sz : Ka'e-Re'enjeJaCinmoSeZukte) (p : Prenu) : Set₁ where
-  cnm : (sc : Selkai)
+  cnm : Rinka p sz
+      → (sc : Selkai)
       → (c : Co'eJaCinmo p sc sz)
       → Stace-Zi'o p c
       → Re'enjeJaCinmoSeZukte sz p
   smn : {A B : Set}
+      → Rinka p sz
       → (sm : Smuni A B p)
       → Stace-Zi'o p sm
       → Re'enjeJaCinmoSeZukte sz p
@@ -58,6 +63,6 @@ ds = k Σ., ID Σ., _ Σ., RJCSZ
   p = {!!}
   k = {!!}
   RJCSZ : Re'enjeJaCinmoSeZukte k p
-  RJCSZ = cnm {!!} {!!} {!!}
+  RJCSZ = cnm {!!} {!!} {!!} {!!}
   ID = record {rjcsz = RJCSZ; ns = {!!}}
 \end{code}
