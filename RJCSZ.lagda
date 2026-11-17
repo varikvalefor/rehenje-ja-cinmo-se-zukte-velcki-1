@@ -62,8 +62,8 @@ module _ (p : Prenu)
          (cm : Co'eJaCinmo p sk k)
          (sc : Stace-Zi'o p cm)
          (ns : Nonselsmu k p) where
-  _ : IsDada k Σ.× Re'enjeJaCinmoSeZukte k p
-  _ = ID Σ., RJCSZ
+  _ : IsDada k
+  _ = ID
     where
     RJCSZ : Re'enjeJaCinmoSeZukte k p
     RJCSZ = cnm r sk cm sc
