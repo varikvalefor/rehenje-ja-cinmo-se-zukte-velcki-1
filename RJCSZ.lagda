@@ -41,14 +41,19 @@ data Re'enjeJaCinmoSeZukte (sz : Ka'e-Re'enjeJaCinmoSeZukte) (p : Prenu) : Set�
 \end{code}
 
 \begin{code}
-IsDada : Ka'e-Re'enjeJaCinmoSeZukte → Set₁
-IsDada d = Σ Prenu (Re'enjeJaCinmoSeZukte d) Σ.× {!!}
+record IsDada (d : Ka'e-Re'enjeJaCinmoSeZukte) : Set₁ where
+  field
+    p : Prenu
+    rjcsz : Re'enjeJaCinmoSeZukte d p
 
 ds : (Σ
        Ka'e-Re'enjeJaCinmoSeZukte
        (λ a → IsDada a Σ.× Σ Prenu (Re'enjeJaCinmoSeZukte a)))
-ds = k Σ., (RJCSZ Σ., {!!}) Σ., RJCSZ
+ds = k Σ., ID Σ., _ Σ., RJCSZ
   where
+  p = {!!}
   k = {!!}
-  RJCSZ = {!!} Σ., cnm {!!} {!!} {!!}
+  RJCSZ : Re'enjeJaCinmoSeZukte k p
+  RJCSZ = cnm {!!} {!!} {!!}
+  ID = record {rjcsz = RJCSZ}
 \end{code}
