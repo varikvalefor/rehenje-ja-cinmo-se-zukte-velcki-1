@@ -28,21 +28,21 @@ Stace-Zi'o = {!!}
 Ka'e-Re'enjeJaCinmoSeZukte : Set
 Ka'e-Re'enjeJaCinmoSeZukte = {!!}
 
-data Re'enjeJaCinmoSezukte (sz : Ka'e-Re'enjeJaCinmoSeZukte) (p : Prenu) : Set₁ where
+data Re'enjeJaCinmoSeZukte (sz : Ka'e-Re'enjeJaCinmoSeZukte) (p : Prenu) : Set₁ where
   cnm : (sc : Selkai)
       → (c : Cinmo p sc sz)
       → Stace-Zi'o p c
-      → Re'enjeJaCinmoSezukte sz p
+      → Re'enjeJaCinmoSeZukte sz p
   smn : {A B : Set}
       → (sm : Smuni A B p)
       → Stace-Zi'o p sm
-      → Re'enjeJaCinmoSezukte sz p
+      → Re'enjeJaCinmoSeZukte sz p
 \end{code}
 
 \begin{code}
 IsDada : Ka'e-Re'enjeJaCinmoSeZukte → Set
 IsDada = {!!}
 
-ds : Σ Ka'e-Re'enjeJaCinmoSeZukte (λ a → IsDada a Data.Product.× Σ Prenu (Re'enjeJaCinmoSezukte a))
+ds : Σ Ka'e-Re'enjeJaCinmoSeZukte (λ a → IsDada a Data.Product.× Σ Prenu (Re'enjeJaCinmoSeZukte a))
 ds = {!!}
 \end{code}
