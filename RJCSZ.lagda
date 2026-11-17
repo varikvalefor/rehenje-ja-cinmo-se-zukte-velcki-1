@@ -43,6 +43,6 @@ data Re'enjeJaCinmoSezukte (sz : Ka'e-Re'enjeJaCinmoSeZukte) (p : Prenu) : Set�
 IsDada : ∀ {a} → {A : Set a} → A → Set a
 IsDada = {!!}
 
-ds : Σ Set (λ A → Σ A IsDada)
+ds : Σ Ka'e-Re'enjeJaCinmoSeZukte (λ a → IsDada a Data.Product.× Σ Prenu (Re'enjeJaCinmoSezukte a))
 ds = {!!}
 \end{code}
