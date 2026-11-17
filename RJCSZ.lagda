@@ -47,5 +47,5 @@ IsDada = λ d → Σ Prenu (Re'enjeJaCinmoSeZukte d) Σ.× {!!}
 ds : (Σ
        Ka'e-Re'enjeJaCinmoSeZukte
        (λ a → IsDada a Σ.× Σ Prenu (Re'enjeJaCinmoSeZukte a)))
-ds = {!!}
+ds = {!!} Σ., {!!}
 \end{code}
