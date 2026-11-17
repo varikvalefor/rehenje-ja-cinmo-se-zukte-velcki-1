@@ -44,6 +44,8 @@ data Re'enjeJaCinmoSeZukte (sz : Ka'e-Re'enjeJaCinmoSeZukte) (p : Prenu) : Set�
 IsDada : Ka'e-Re'enjeJaCinmoSeZukte → Set₁
 IsDada = λ d → Σ Prenu (Re'enjeJaCinmoSeZukte d) Σ.× {!!}
 
-ds : Σ Ka'e-Re'enjeJaCinmoSeZukte (λ a → IsDada a Σ.× Σ Prenu (Re'enjeJaCinmoSeZukte a))
+ds : (Σ
+       Ka'e-Re'enjeJaCinmoSeZukte
+       (λ a → IsDada a Σ.× Σ Prenu (Re'enjeJaCinmoSeZukte a)))
 ds = {!!}
 \end{code}
