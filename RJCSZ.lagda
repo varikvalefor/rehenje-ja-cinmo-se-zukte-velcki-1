@@ -13,17 +13,33 @@ open import Data.Product
 Prenu : Set
 Prenu = {!!}
 
+Smuni : ∀ {a b} → {A : Set a} → Set b → A → Prenu → Set (a ⊔ b)
+Smuni = {!!}
+
+Selkai : Set
+Selkai = {!!}
+
+Cinmo : ∀ {a} → {A : Set a} → Prenu → Selkai → A → Set a
+Cinmo = {!!}
+
+Stace-Zi'o : ∀ {a} → {A : Set a} → Prenu → A → Set a
+Stace-Zi'o = {!!}
+
 Ka'e-Re'enjeJaCinmoSeZukte : Set
 Ka'e-Re'enjeJaCinmoSeZukte = {!!}
 
-Re'enjeJaCinmoSezukte : Ka'e-Re'enjeJaCinmoSeZukte → Prenu → Set
-Re'enjeJaCinmoSezukte = {!!}
+data Re'enjeJaCinmoSezukte (sz : Ka'e-Re'enjeJaCinmoSeZukte) (p : Prenu) : Set₁ where
+  cnm : (sc : Selkai)
+      → (c : Cinmo p sc sz)
+      → Stace-Zi'o p c
+      → Re'enjeJaCinmoSezukte sz p
+  smn : {A B : Set}
+      → (sm : Smuni A B p)
+      → Stace-Zi'o p sm
+      → Re'enjeJaCinmoSezukte sz p
 \end{code}
 
 \begin{code}
-Smuni : ∀ {a b} → {A : Set a} → Set b → A → Set (a ⊔ b)
-Smuni = {!!}
-
 IsDada : ∀ {a} → {A : Set a} → A → Set a
 IsDada = {!!}
 
