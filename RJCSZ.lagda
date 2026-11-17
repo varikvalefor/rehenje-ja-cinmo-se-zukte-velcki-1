@@ -40,7 +40,7 @@ data Re'enjeJaCinmoSezukte (sz : Ka'e-Re'enjeJaCinmoSeZukte) (p : Prenu) : Set�
 \end{code}
 
 \begin{code}
-IsDada : ∀ {a} → {A : Set a} → A → Set a
+IsDada : Ka'e-Re'enjeJaCinmoSeZukte → Set
 IsDada = {!!}
 
 ds : Σ Ka'e-Re'enjeJaCinmoSeZukte (λ a → IsDada a Data.Product.× Σ Prenu (Re'enjeJaCinmoSezukte a))
