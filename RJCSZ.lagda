@@ -20,8 +20,8 @@ Smuni = {!!}
 Selkai : Set
 Selkai = {!!}
 
-Cinmo : ∀ {a} → {A : Set a} → Prenu → Selkai → A → Set a
-Cinmo = {!!}
+Co'eJaCinmo : ∀ {a} → {A : Set a} → Prenu → Selkai → A → Set a
+Co'eJaCinmo = {!!}
 
 Stace-Zi'o : ∀ {a} → {A : Set a} → Prenu → A → Set a
 Stace-Zi'o = {!!}
@@ -31,7 +31,7 @@ Ka'e-Re'enjeJaCinmoSeZukte = {!!}
 
 data Re'enjeJaCinmoSeZukte (sz : Ka'e-Re'enjeJaCinmoSeZukte) (p : Prenu) : Set₁ where
   cnm : (sc : Selkai)
-      → (c : Cinmo p sc sz)
+      → (c : Co'eJaCinmo p sc sz)
       → Stace-Zi'o p c
       → Re'enjeJaCinmoSeZukte sz p
   smn : {A B : Set}
