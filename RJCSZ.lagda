@@ -55,14 +55,17 @@ record IsDada (d : Ka'e-Re'enjeJaCinmoSeZukte) : Set₁ where
     rjcsz : Re'enjeJaCinmoSeZukte d p
     ns : Nonselsmu d p
 
-ds : (Σ
-       Ka'e-Re'enjeJaCinmoSeZukte
-       (λ k → IsDada k Σ.× Σ Prenu (Re'enjeJaCinmoSeZukte k)))
-ds = k Σ., ID Σ., _ Σ., RJCSZ
-  where
-  p = {!!}
-  k = {!!}
-  RJCSZ : Re'enjeJaCinmoSeZukte k p
-  RJCSZ = cnm {!!} {!!} {!!} {!!}
-  ID = record {rjcsz = RJCSZ; ns = {!!}}
+module _ (p : Prenu)
+         (k : Ka'e-Re'enjeJaCinmoSeZukte)
+         (r : Rinka p k)
+         (sk : Selkai)
+         (cm : Co'eJaCinmo p sk k)
+         (sc : Stace-Zi'o p cm)
+         (ns : Nonselsmu k p) where
+  _ : IsDada k Σ.× Re'enjeJaCinmoSeZukte k p
+  _ = ID Σ., RJCSZ
+    where
+    RJCSZ : Re'enjeJaCinmoSeZukte k p
+    RJCSZ = cnm r sk cm sc
+    ID = record {rjcsz = RJCSZ; ns = ns}
 \end{code}
