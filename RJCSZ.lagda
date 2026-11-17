@@ -57,7 +57,7 @@ record IsDada (d : Ka'e-Re'enjeJaCinmoSeZukte) : Set₁ where
 
 ds : (Σ
        Ka'e-Re'enjeJaCinmoSeZukte
-       (λ a → IsDada a Σ.× Σ Prenu (Re'enjeJaCinmoSeZukte a)))
+       (λ k → IsDada k Σ.× Σ Prenu (Re'enjeJaCinmoSeZukte k)))
 ds = k Σ., ID Σ., _ Σ., RJCSZ
   where
   p = {!!}
