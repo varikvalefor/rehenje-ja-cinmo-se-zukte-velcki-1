@@ -17,6 +17,9 @@ Prenu = {!!}
 Smuni : ∀ {a b} → {A : Set a} → Set b → A → Prenu → Set (a ⊔ b)
 Smuni = {!!}
 
+Nonselsmu : ∀ {a} → {A : Set a} → A → Prenu → Set a
+Nonselsmu = {!!}
+
 Selkai : Set
 Selkai = {!!}
 
@@ -45,6 +48,7 @@ record IsDada (d : Ka'e-Re'enjeJaCinmoSeZukte) : Set₁ where
   field
     p : Prenu
     rjcsz : Re'enjeJaCinmoSeZukte d p
+    ns : Nonselsmu d p
 
 ds : (Σ
        Ka'e-Re'enjeJaCinmoSeZukte
@@ -55,5 +59,5 @@ ds = k Σ., ID Σ., _ Σ., RJCSZ
   k = {!!}
   RJCSZ : Re'enjeJaCinmoSeZukte k p
   RJCSZ = cnm {!!} {!!} {!!}
-  ID = record {rjcsz = RJCSZ}
+  ID = record {rjcsz = RJCSZ; ns = {!!}}
 \end{code}
