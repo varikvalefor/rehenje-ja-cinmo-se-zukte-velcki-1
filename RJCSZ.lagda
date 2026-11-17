@@ -63,9 +63,8 @@ module _ (p : Prenu)
          (sc : Stace-Zi'o p cm)
          (ns : Nonselsmu k p) where
   _ : IsDada k
-  _ = ID
+  _ = record {rjcsz = RJCSZ; ns = ns}
     where
     RJCSZ : Re'enjeJaCinmoSeZukte k p
     RJCSZ = cnm r sk cm sc
-    ID = record {rjcsz = RJCSZ; ns = ns}
 \end{code}
