@@ -190,13 +190,13 @@ module _ {a}
          (r : Zukte p k)
          (zk : Zilkai)
          (cm : Co'eJaCinmo p zk k)
-         (sc : Stace-Zi'o p cm)
+         (sc : Stace-Zi'o p (Co'eJaCinmo p zk k))
          (ns : Nonselsmu k p) where
   _ : IsDada k
   _ = record {rjcsz = RJCSZ; ns = ns}
     where
     RJCSZ : Re'enjeJaCinmoSeZukte k p
-    RJCSZ = cnm r zk cm {!!}
+    RJCSZ = cnm r zk cm sc
 \end{code}
 
 \section{le skami besna pe'a mupli / The Artificial (Neural Network) Example}
