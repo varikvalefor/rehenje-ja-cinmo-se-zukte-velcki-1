@@ -153,14 +153,14 @@ record IsDada (d : Ka'e-Re'enjeJaCinmoSeZukte) : Set₁ where
 module _ (p : Prenu)
          (k : Ka'e-Re'enjeJaCinmoSeZukte)
          (r : Zukte p k)
-         (sk : Zilkai)
-         (cm : Co'eJaCinmo p sk k)
+         (zk : Zilkai)
+         (cm : Co'eJaCinmo p zk k)
          (sc : Stace-Zi'o p cm)
          (ns : Nonselsmu k p) where
   _ : IsDada k
   _ = record {rjcsz = RJCSZ; ns = ns}
     where
     RJCSZ : Re'enjeJaCinmoSeZukte k p
-    RJCSZ = cnm r sk cm sc
+    RJCSZ = cnm r zk cm sc
 \end{code}
 \end{document}
