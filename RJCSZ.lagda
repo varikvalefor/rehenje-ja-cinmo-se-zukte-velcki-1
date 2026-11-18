@@ -16,6 +16,7 @@
 \newunicodechar{♯}{\ensuremath{\mathnormal\sharp}}
 \newunicodechar{∘}{\ensuremath{\mathnormal\circ}}
 \newunicodechar{₀}{\ensuremath{\mathnormal{{}_0}}}
+\newunicodechar{₁}{\ensuremath{\mathnormal{{}_1}}}
 
 \newcommand\Sym\AgdaSymbol
 \newcommand\D\AgdaDatatype
@@ -92,8 +93,8 @@ Ka'e-Re'enjeJaCinmoSeZukte = {!!}
 \section{le se ctaipe co su'u gasnu / The Type regarding Causing Things}
 
 \begin{code}
-Gasnu : Prenu → Ka'e-Re'enjeJaCinmoSeZukte → Set
-Gasnu = {!!}
+Zukte : Prenu → Ka'e-Re'enjeJaCinmoSeZukte → Set
+Zukte = {!!}
 \end{code}
 
 \section{le se ctaipe co su'u re'enje ja cinmo se zukte / The Type regarding Being Art}
@@ -101,13 +102,13 @@ Gasnu = {!!}
 \begin{code}
 data Re'enjeJaCinmoSeZukte (sz : Ka'e-Re'enjeJaCinmoSeZukte)
                            (p : Prenu) : Set₁ where
-  cnm : Gasnu p sz
+  cnm : Zukte p sz
       → (sc : Selkai)
       → (c : Co'eJaCinmo p sc sz)
       → Stace-Zi'o p c
       → Re'enjeJaCinmoSeZukte sz p
   smn : {A B : Set}
-      → Gasnu p sz
+      → Zukte p sz
       → (sm : Smuni A B p)
       → Stace-Zi'o p sm
       → Re'enjeJaCinmoSeZukte sz p
@@ -126,7 +127,7 @@ record IsDada (d : Ka'e-Re'enjeJaCinmoSeZukte) : Set₁ where
 \begin{code}
 module _ (p : Prenu)
          (k : Ka'e-Re'enjeJaCinmoSeZukte)
-         (r : Gasnu p k)
+         (r : Zukte p k)
          (sk : Selkai)
          (cm : Co'eJaCinmo p sk k)
          (sc : Stace-Zi'o p cm)
