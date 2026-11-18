@@ -1,3 +1,4 @@
+\begin{document}
 \begin{code}
 open import Level
   using (
@@ -64,3 +65,4 @@ module _ (p : Prenu)
     RJCSZ : Re'enjeJaCinmoSeZukte k p
     RJCSZ = cnm r sk cm sc
 \end{code}
+\end{document}
