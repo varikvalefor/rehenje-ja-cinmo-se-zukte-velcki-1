@@ -170,8 +170,8 @@ data Re'enjeJaCinmoSeZukte {a b c}
       → Stace-Zi'o p (Co'eJaCinmo p sc sz)
       → Re'enjeJaCinmoSeZukte sz p
   smn : {B : Set b} → {C : Set c}
-      → (x : C)
       → Zukte p sz
+      → (x : C)
       → Smuni B x p
       → Stace-Zi'o p (Smuni B x p)
       → Re'enjeJaCinmoSeZukte sz p
@@ -259,7 +259,7 @@ A term of \F{FackiSmuniLLM} \B s \B x \B p exists iff (\B x is the output of an 
            (zsml : Zukte p $ FackiSmuniLLM A s p)
            (zstc : Stace-Zi'o p $ Smuni A s p) where
     _ : Re'enjeJaCinmoSeZukte (FackiSmuniLLM A s p) p
-    _ = smn {B = A} s zsml (SmuniLLM→Smuni A s p zsml) zstc
+    _ = smn {B = A} zsml s (SmuniLLM→Smuni A s p zsml) zstc
 \end{code}
 
 \section{le me'oi .Dada.\ mupli je ke srana be lo skami besna pe'a / The Dada Example which is Relevant to Artificial (Neural Networks)}
