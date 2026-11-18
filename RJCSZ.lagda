@@ -157,7 +157,9 @@ SIMPLIFICATION.\@  \D{Re'enjeJaCinmoSeZukte} terms are proofs (under an uncertai
 data Re'enjeJaCinmoSeZukte {a b c}
                            (sz : Ka'e-SeZukte a)
                            (p : Prenu) :
-                           Set (Level.suc a ⊔ Level.suc b ⊔ Level.suc c) where
+                           Set (Level.suc a ⊔
+                                Level.suc b ⊔
+                                Level.suc c) where
   cnm : Zukte p sz
       → (sc : Zilkai)
       → (c : Co'eJaCinmo p sc sz)
