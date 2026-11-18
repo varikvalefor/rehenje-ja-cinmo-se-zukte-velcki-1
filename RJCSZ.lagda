@@ -226,13 +226,13 @@ module SBP where
                 → Ka'e-SeZukte (Level.suc a)
   FackiSmuniLLM = {!!}
 
-  SeSmuniLLM→Smuni : ∀ {a}
-                   → (A : Set a)
-                   → (s : String)
-                   → (p : Prenu)
-                   → Zukte p $ FackiSmuniLLM A s p
-                   → Smuni A s p
-  SeSmuniLLM→Smuni = {!!}
+  SmuniLLM→Smuni : ∀ {a}
+                 → (A : Set a)
+                 → (s : String)
+                 → (p : Prenu)
+                 → Zukte p $ FackiSmuniLLM A s p
+                 → Smuni A s p
+  SmuniLLM→Smuni = {!!}
 
   module _ {a}
            (p : Prenu)
@@ -241,7 +241,7 @@ module SBP where
            (zsml : Zukte p $ FackiSmuniLLM A s p)
            (zstc : Stace-Zi'o p $ Smuni A s p) where
     _ : Re'enjeJaCinmoSeZukte (FackiSmuniLLM A s p) p
-    _ = smn {B = A} s zsml (SeSmuniLLM→Smuni A s p zsml) zstc
+    _ = smn {B = A} s zsml (SmuniLLM→Smuni A s p zsml) zstc
 \end{code}
 
 \section{le me'oi .Dada.\ mupli je ke srana be lo skami besna pe'a / The Dada Example which is Relevant to Artificial (Neural Networks)}
