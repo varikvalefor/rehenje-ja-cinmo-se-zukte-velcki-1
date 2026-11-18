@@ -10,6 +10,7 @@
 \usepackage{unicode-math}
 \usepackage{newunicodechar}
 
+\newunicodechar{∀}{\ensuremath{\mathnormal\forall}}
 \newunicodechar{λ}{\ensuremath{\mathnormal\lambda}}
 \newunicodechar{♯}{\ensuremath{\mathnormal\sharp}}
 \newunicodechar{∘}{\ensuremath{\mathnormal\circ}}
