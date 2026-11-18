@@ -225,12 +225,12 @@ SeSmuniLLM→Smuni : ∀ {a}
                  → Smuni A s p
 SeSmuniLLM→Smuni = {!!}
 
-module _ {a}
-         (p : Prenu)
-         (A : Set a)
-         (s : String)
-         (zsml : Zukte p (FackiSeSmuniLLM A s p))
-         (zstc : Stace-Zi'o p (Smuni A s p)) where
+module SBP {a}
+           (p : Prenu)
+           (A : Set a)
+           (s : String)
+           (zsml : Zukte p (FackiSeSmuniLLM A s p))
+           (zstc : Stace-Zi'o p (Smuni A s p)) where
   _ : Re'enjeJaCinmoSeZukte (FackiSeSmuniLLM A s p) p
   _ = smn {B = A} s zsml (SeSmuniLLM→Smuni A s p zsml) zstc
 \end{code}
