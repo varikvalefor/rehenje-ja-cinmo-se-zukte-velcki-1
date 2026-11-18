@@ -205,7 +205,11 @@ SIMPLIFICATION.\@  VARIK opines or believes that some event of assigning (to the
 
 
 \begin{code}
-FackiSeSmuniLLM : ∀ {a} → Set a → String → Prenu → Ka'e-SeZukte (Level.suc a)
+FackiSeSmuniLLM : ∀ {a}
+                → Set a
+                → String
+                → Prenu
+                → Ka'e-SeZukte (Level.suc a)
 FackiSeSmuniLLM = {!!}
 
 SeSmuniLLM→Smuni : ∀ {a}
