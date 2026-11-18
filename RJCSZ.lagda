@@ -26,7 +26,7 @@
 
 \newcommand\sds{\spacefactor\sfcode`.\ \space}
 
-\title{le cipra velcki be le smuni be lu re'enje ja cinmo se zbasu bei la .varik.\ / A Test Definition of the Meaning (for VARIK) of ``Art''}
+\title{le cipra velcki be le smuni be lu re'enje ja cinmo se zukte bei la .varik.\ / A Test Definition of the Meaning (for VARIK) of ``Art''}
 \author{la .varik.\ .VALefor.}
 \begin{document}
 
