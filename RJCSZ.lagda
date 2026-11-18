@@ -76,6 +76,11 @@ Smuni = {!!}
 \end{code}
 
 \section{le se ctaipe co su'u nonselsmu / The Type regarding Being Nonsense}
+\paragraph{la .lojban.}
+ni'o ga jo ctaipe la'e zoi zoi.\ \F{Nonselsmu} \B x \B p\ .zoi.\ gi la'e zo'oi .\B x.\ nonselsmu lo prenu je ke se sinxa be la'e zo'oi .\B p.
+
+\paragraph{English}
+A term of \F{Nonselsmu} \B x \B p exists iff \B s is meaningless to the prenu which is represented by \B p.
 
 \begin{code}
 Nonselsmu : ∀ {a} → {A : Set a} → A → Prenu → Set a
