@@ -1,4 +1,6 @@
 \begin{document}
+\section{le vrici / The Miscellaneous}
+
 \begin{code}
 open import Level
   using (
@@ -6,20 +8,28 @@ open import Level
   )
 \end{code}
 
+\section{le prenu se ctaipe / The Prenu Type}
+
 \begin{code}
 Prenu : Set
 Prenu = {!!}
 \end{code}
+
+\section{le se ctaipe co su'u smuni / The Type regarding Being Meaningful}
 
 \begin{code}
 Smuni : ∀ {a b} → {A : Set a} → Set b → A → Prenu → Set (a ⊔ b)
 Smuni = {!!}
 \end{code}
 
+\section{le se ctaipe co su'u nonselsmu / The Type regarding Being Nonsense}
+
 \begin{code}
 Nonselsmu : ∀ {a} → {A : Set a} → A → Prenu → Set a
 Nonselsmu = {!!}
 \end{code}
+
+\section{le selkai se ctaipe / The Type regarding Being a Property/Quality}
 
 \begin{code}
 Selkai : Set
