@@ -64,6 +64,11 @@ Prenu = {!!}
 \end{code}
 
 \section{le se ctaipe co su'u smuni / The Type regarding Being Meaningful}
+\paragraph{la .lojban.}
+ni'o ga jo ctaipe la'e zoi zoi.\ \F{Smuni} \B s \B x \B p\ .zoi.\ gi la'e zo'oi .\B s.\ smuni la'e zo'oi .\B x.\ la'e lo prenu je ke se sinxa be zo'oi .\B p.
+
+\paragraph{English}
+A term of \F{Smuni} \B s \B x \B p exists iff \B s is the meaning (to the prenu which is represented by \B p) of \B x.
 
 \begin{code}
 Smuni : ∀ {a b} → {A : Set a} → Set b → A → Prenu → Set (a ⊔ b)
