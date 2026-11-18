@@ -131,6 +131,11 @@ Ka'e-Re'enjeJaCinmoSeZukte = {!!}
 \end{code}
 
 \section{le se ctaipe co su'u zukte / The Type regarding Enacting Things}
+\paragraph{la .lojban.}
+ni'o ga jo ctaipe la'e zoi zoi.\ \F{Zukte}} \B p \B z\ .zoi.\ gi lo prenu je ke se sinxa be la'e zo'oi .\B p.\ cu zukte la'e zo'oi .\B z.
+
+\paragraph{English}
+A term of \F{Stace-Zi'o} \B p \B z exists iff the prenu which is represented by \B p enacts \B z.
 
 \begin{code}
 Zukte : Prenu → Ka'e-Re'enjeJaCinmoSeZukte → Set
