@@ -47,6 +47,10 @@ open import Level
   using (
     _⊔_
   )
+open import Function
+  using (
+    _$_
+  )
 open import Data.String
   using (
     String
@@ -182,7 +186,7 @@ module Dada where
 \begin{code}
   record IsDada {a}
                 (d : Ka'e-SeZukte a) :
-                Set (Level.suc (Level.suc a)) where
+                Set (Level.suc $ Level.suc a) where
     field
       p : Prenu
       rjcsz : Re'enjeJaCinmoSeZukte {b = Level.zero} {Level.zero} d p
@@ -196,7 +200,7 @@ module Dada where
            (r : Zukte p k)
            (zk : Zilkai)
            (cm : Co'eJaCinmo p zk k)
-           (sc : Stace-Zi'o p (Co'eJaCinmo p zk k))
+           (sc : Stace-Zi'o p $ Co'eJaCinmo p zk k)
            (ns : Nonselsmu k p) where
     _ : IsDada k
     _ = record {rjcsz = RJCSZ; ns = ns}
@@ -226,7 +230,7 @@ module SBP where
                    → (A : Set a)
                    → (s : String)
                    → (p : Prenu)
-                   → Zukte p (FackiSeSmuniLLM A s p)
+                   → Zukte p $ FackiSeSmuniLLM A s p
                    → Smuni A s p
   SeSmuniLLM→Smuni = {!!}
 
@@ -234,8 +238,8 @@ module SBP where
            (p : Prenu)
            (A : Set a)
            (s : String)
-           (zsml : Zukte p (FackiSeSmuniLLM A s p))
-           (zstc : Stace-Zi'o p (Smuni A s p)) where
+           (zsml : Zukte p $ FackiSeSmuniLLM A s p)
+           (zstc : Stace-Zi'o p $ Smuni A s p) where
     _ : Re'enjeJaCinmoSeZukte (FackiSeSmuniLLM A s p) p
     _ = smn {B = A} s zsml (SeSmuniLLM→Smuni A s p zsml) zstc
 \end{code}
