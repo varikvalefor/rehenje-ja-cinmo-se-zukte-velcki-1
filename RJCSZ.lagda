@@ -161,8 +161,8 @@ data Re'enjeJaCinmoSeZukte {a b c}
   smn : {B : Set b} → {C : Set c}
       → (x : C)
       → Zukte p sz
-      → (sm : Smuni B x p)
-      → Stace-Zi'o p sm
+      → Smuni B x p
+      → Stace-Zi'o p (Smuni B x p)
       → Re'enjeJaCinmoSeZukte sz p
 \end{code}
 
