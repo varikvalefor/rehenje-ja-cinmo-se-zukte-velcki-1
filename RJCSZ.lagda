@@ -198,10 +198,10 @@ module _ {a}
 
 \section{le skami besna pe'a mupli / The Artificial (Neural Network) Example}
 \paragraph{la .lojban.}
-ni'o sa'u la .varik.\ cu jinvi ja krici le du'u lo su'o su'u zbasu pe'a lo smuni be lo te pruce be f lo skami besna pe'a cu re'enje ja cinmo se zukte
+ni'o sa'u la .varik.\ cu jinvi ja krici le du'u lo su'o su'u zbasu pe'a lo smuni be lo te pruce be f lo skami besna pe'a cu re'enje ja cinmo se zukte\sds  .i ku'i la .varik.\ na jinvi le du'u lo ro te pruce be fi lo skami besna pe'a cu jai re'enje ja cinmo se zukte
 
 \paragraph{English}
-SIMPLIFICATION.\@  VARIK opines or believes that some event of assigning (to the output of an artificial (neural network)) meaning is art.
+SIMPLIFICATION.\@  VARIK opines or believes that some event of assigning (to the output of an artificial (neural network)) meaning is art.  But VARIK does not believe that all things which are output by artificial (neural networks) are art.
 
 
 \begin{code}
