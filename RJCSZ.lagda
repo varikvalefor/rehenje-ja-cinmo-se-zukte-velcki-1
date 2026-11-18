@@ -243,4 +243,50 @@ module SBP where
     _ : Re'enjeJaCinmoSeZukte (FackiSeSmuniLLM A s p) p
     _ = smn {B = A} s zsml (SeSmuniLLM→Smuni A s p zsml) zstc
 \end{code}
+
+\section{le me'oi .Dada.\ mupli je ke srana be lo skami besna pe'a / The Dada Example which is Relevant to Artificial (Neural Networks)}
+\paragraph{la .lojban.}
+ni'o la .varik.\ cu jinvi le du'u me'oi .Dada.\ fa lo su'o su'u co'e lo te pruce be fi tu'a lo skami besna pe'a
+
+\paragraph{English}
+VARIK opines that some stuff which is done with the output of artificial (neural networks) is Dada.
+
+\begin{code}
+module SBP-Dada where
+\end{code}
+
+\subsection{le se ctaipe co su'u pruce fa tu'a lo skami besna pe'a / The Type regarding being the Output of an Artificial (Neural Network)}
+\paragraph{la .lojban.}
+ni'o ga jo ctaipe la'e zoi zoi.\ \F{Zi'oZi'oPruce} \B s\ .zoi.\ gi lo skami besna pe'a cu jai pruce fi la'e zo'oi .\B s.
+
+\paragraph{English}
+A term of \F{Zi'oZi'oPruce} \B s exists iff \B s is the output of an artificial (neural network).
+
+\begin{code}
+  Zi'oZi'oPruce : String → Ka'e-SeZukte Level.zero
+  Zi'oZi'oPruce = {!!}
+\end{code}
+
+\subsection{le ctaipe / The Proof}
+
+\begin{code}
+  open Dada
+    using (
+      IsDada
+    )
+
+  module _ (p : Prenu)
+           (s : String)
+           (z : Zilkai)
+           (zuk : Zukte p $ Zi'oZi'oPruce s)
+           (cm : Co'eJaCinmo p z $ Zi'oZi'oPruce s)
+           (cms : Stace-Zi'o p $ Co'eJaCinmo p z $ Zi'oZi'oPruce s)
+           (ns : Nonselsmu (Zi'oZi'oPruce s) p) where
+    _ : IsDada $ Zi'oZi'oPruce s
+    _ = record {
+      p = p;
+      rjcsz = cnm zuk z cm cms;
+      ns = ns
+      }
+\end{code}
 \end{document}
