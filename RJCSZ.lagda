@@ -177,7 +177,8 @@ data Re'enjeJaCinmoSeZukte {a b c}
 
 \begin{code}
 record IsDada {a}
-              (d : Ka'e-SeZukte a) : Set (Level.suc (Level.suc a)) where
+              (d : Ka'e-SeZukte a) :
+              Set (Level.suc (Level.suc a)) where
   field
     p : Prenu
     rjcsz : Re'enjeJaCinmoSeZukte {b = Level.zero} {Level.zero} d p
