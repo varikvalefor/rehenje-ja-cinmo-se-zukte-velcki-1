@@ -210,28 +210,29 @@ SIMPLIFICATION.\@  VARIK opines or believes that some event/(abstract state)/wha
 
 
 \begin{code}
-FackiSeSmuniLLM : ∀ {a}
-                → Set a
-                → String
-                → Prenu
-                → Ka'e-SeZukte (Level.suc a)
-FackiSeSmuniLLM = {!!}
+module SBP where
+  FackiSeSmuniLLM : ∀ {a}
+                  → Set a
+                  → String
+                  → Prenu
+                  → Ka'e-SeZukte (Level.suc a)
+  FackiSeSmuniLLM = {!!}
 
-SeSmuniLLM→Smuni : ∀ {a}
-                 → (A : Set a)
-                 → (s : String)
-                 → (p : Prenu)
-                 → Zukte p (FackiSeSmuniLLM A s p)
-                 → Smuni A s p
-SeSmuniLLM→Smuni = {!!}
+  SeSmuniLLM→Smuni : ∀ {a}
+                   → (A : Set a)
+                   → (s : String)
+                   → (p : Prenu)
+                   → Zukte p (FackiSeSmuniLLM A s p)
+                   → Smuni A s p
+  SeSmuniLLM→Smuni = {!!}
 
-module _ {a}
-         (p : Prenu)
-         (A : Set a)
-         (s : String)
-         (zsml : Zukte p (FackiSeSmuniLLM A s p))
-         (zstc : Stace-Zi'o p (Smuni A s p)) where
-  _ : Re'enjeJaCinmoSeZukte (FackiSeSmuniLLM A s p) p
-  _ = smn {B = A} s zsml (SeSmuniLLM→Smuni A s p zsml) zstc
+  module _ {a}
+           (p : Prenu)
+           (A : Set a)
+           (s : String)
+           (zsml : Zukte p (FackiSeSmuniLLM A s p))
+           (zstc : Stace-Zi'o p (Smuni A s p)) where
+    _ : Re'enjeJaCinmoSeZukte (FackiSeSmuniLLM A s p) p
+    _ = smn {B = A} s zsml (SeSmuniLLM→Smuni A s p zsml) zstc
 \end{code}
 \end{document}
