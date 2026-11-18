@@ -225,7 +225,9 @@ module SBP where
                 → Prenu
                 → Ka'e-SeZukte (Level.suc a)
   FackiSmuniLLM = {!!}
+\end{code}
 
+\begin{code}
   SmuniLLM→Smuni : ∀ {a}
                  → (A : Set a)
                  → (s : String)
@@ -233,7 +235,9 @@ module SBP where
                  → Zukte p $ FackiSmuniLLM A s p
                  → Smuni A s p
   SmuniLLM→Smuni = {!!}
+\end{code}
 
+\begin{code}
   module _ {a}
            (p : Prenu)
            (A : Set a)
