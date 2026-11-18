@@ -9,7 +9,9 @@ open import Level
 \begin{code}
 Prenu : Set
 Prenu = {!!}
+\end{code}
 
+\begin{code}
 Smuni : ∀ {a b} → {A : Set a} → Set b → A → Prenu → Set (a ⊔ b)
 Smuni = {!!}
 
