@@ -67,7 +67,9 @@ record IsDada (d : Ka'e-Re'enjeJaCinmoSeZukte) : Set₁ where
     p : Prenu
     rjcsz : Re'enjeJaCinmoSeZukte d p
     ns : Nonselsmu d p
+\end{code}
 
+\begin{code}
 module _ (p : Prenu)
          (k : Ka'e-Re'enjeJaCinmoSeZukte)
          (r : Rinka p k)
