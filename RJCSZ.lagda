@@ -42,6 +42,13 @@ open import Level
 \end{code}
 
 \section{le prenu se ctaipe / The Prenu Type}
+\paragraph{la .lojban.}
+ni'o la'oi .\F{Prenu}.\ se ctaipe lo co'e ja sinxa be lo prenu\\
+.i la .varik.\ na jinvi le du'u lo prenu cu ctaipe lo su'o co'e\sds  .i la'e di'u lijda co'e
+
+\paragraph{English}
+\F{Prenu} is the type of representations/whatever of prenu.\\
+VARIK does not opine that prenu are terms of some type.  Not opining is a religious thing.
 
 \begin{code}
 Prenu : Set
