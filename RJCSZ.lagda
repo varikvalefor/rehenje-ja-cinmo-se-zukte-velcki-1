@@ -57,6 +57,8 @@ Ka'e-Re'enjeJaCinmoSeZukte : Set
 Ka'e-Re'enjeJaCinmoSeZukte = {!!}
 \end{code}
 
+\section{le se ctaipe co su'u gasnu / The Type regarding Causing Things}
+
 \begin{code}
 Rinka : Prenu → Ka'e-Re'enjeJaCinmoSeZukte → Set
 Rinka = {!!}
