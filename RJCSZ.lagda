@@ -44,7 +44,9 @@ Ka'e-Re'enjeJaCinmoSeZukte = {!!}
 \begin{code}
 Rinka : Prenu → Ka'e-Re'enjeJaCinmoSeZukte → Set
 Rinka = {!!}
+\end{code}
 
+\begin{code}
 data Re'enjeJaCinmoSeZukte (sz : Ka'e-Re'enjeJaCinmoSeZukte)
                            (p : Prenu) : Set₁ where
   cnm : Rinka p sz
