@@ -144,10 +144,10 @@ Zukte = {!!}
 
 \section{le se ctaipe co su'u re'enje ja cinmo se zukte / The Type regarding Being Art}
 \paragraph{la .lojban.}
-ni'o sa'u ga je lo me'oi .\D{Re'enjeJaCinmoSeZukte} co'e cu ctaipe fi zo'e poi la .varik.\ na prane le ka ce'u birti tu'a ke'a ku'o fe lo su'u re'enje ja cinmo se zuktegi la .varik.\ ku kucli lo du'u xu kau ri krici le du'u ro da poi ke'a prenu zo'u ro de zo'u ga jo de re'enje ja cinmo se zukte de gi su'o di zo'u ga je da prane lo ka ce'u xi re stace fi ga ja lo su'u di smuni de da gi lo su'u da co'e ja cinmo di de gi da stace tu'a di
+ni'o sa'u ga je lo me'oi .\D{Re'enjeJaCinmoSeZukte} co'e cu ctaipe fi zo'e poi la .varik.\ na prane le ka ce'u birti tu'a ke'a ku'o fe lo su'u re'enje ja cinmo se zuktegi la .varik.\ ku kucli lo du'u xu kau ri krici le du'u ro da poi ke'a prenu zo'u ro de zo'u ga jo de re'enje ja cinmo se zukte de gi su'o di zo'u ga je da prane lo ka ce'u xi re stace fi ga ja lo su'u di smuni de da gi lo su'u da co'e ja cinmo di de gi da stace tu'a di\sds  .i la .varik.\ na birti lo du'u xu kau la'oi .\D{Re'enjeJaCinmoSeZukte}.\ prane le ka ce'u mapti le smuni be lu re'enje ja cinmo se zukte bei vo'a
 
 \paragraph{English}
-SIMPLIFICATION.\@  \D{Re'enjeJaCinmoSeZukte} terms are proofs (under an uncertain (for VARIK) context) of that (stuff is art).  VARIK is not certain about whether VARIK believes that (for all prenu $p$, for all things $x$, $x$ is art of $p$ iff (some thing $s$ exists such that $p$ is perfectly sincere about that ($s$ is the meaning (to $p$) of $x$) or that ($p$ feels (about $x$) $s$)\ldots and $s$)).
+SIMPLIFICATION.\@  \D{Re'enjeJaCinmoSeZukte} terms are proofs (under an uncertain (for VARIK) context) of that (stuff is art).  VARIK is not certain about whether VARIK believes that (for all prenu $p$, for all things $x$, $x$ is art of $p$ iff (some thing $s$ exists such that $p$ is perfectly sincere about that ($s$ is the meaning (to $p$) of $x$) or that ($p$ feels (about $x$) $s$)\ldots and $s$)).  VARIK is not certain about whether \D{Re'enjeJaCinmoSeZukte} is perfectly in accordance with the meaning (for VARIK) of ``art''.
 
 \begin{code}
 data Re'enjeJaCinmoSeZukte (sz : Ka'e-Re'enjeJaCinmoSeZukte)
