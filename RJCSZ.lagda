@@ -126,7 +126,7 @@ Stace-Zi'o = {!!}
 \section{le se ctaipe Coke cumki ke re'enje ja cinmo se ctaipe / The Type of Possible Art}
 
 \begin{code}
-Ka'e-SeZukte : Set
+Ka'e-SeZukte : ∀ a → Set (Level.suc a)
 Ka'e-SeZukte = {!!}
 \end{code}
 
@@ -138,7 +138,7 @@ ni'o ga jo ctaipe la'e zoi zoi.\ \F{Zukte} \B p \B z\ .zoi.\ gi lo prenu je ke s
 A term of \F{Stace-Zi'o} \B p \B z exists iff the prenu which is represented by \B p enacts \B z.
 
 \begin{code}
-Zukte : Prenu → Ka'e-SeZukte → Set
+Zukte : ∀ {a} → Prenu → Ka'e-SeZukte a → Set (Level.suc a)
 Zukte = {!!}
 \end{code}
 
@@ -150,16 +150,18 @@ ni'o sa'u ga je lo me'oi .\D{Re'enjeJaCinmoSeZukte} co'e cu ctaipe fi zo'e poi l
 SIMPLIFICATION.\@  \D{Re'enjeJaCinmoSeZukte} terms are proofs (under an uncertain (for VARIK) context) of that (stuff is art).  VARIK is not certain about whether VARIK believes that (for all prenu $p$, for all things $x$, $x$ is art of $p$ iff (some thing $s$ exists such that $p$ is perfectly sincere about that ($s$ is the meaning (to $p$) of $x$) or that ($p$ feels (about $x$) $s$)\ldots and $s$)).  VARIK is not certain about whether \D{Re'enjeJaCinmoSeZukte} is perfectly in accordance with the meaning (for VARIK) of ``art''.
 
 \begin{code}
-data Re'enjeJaCinmoSeZukte (sz : Ka'e-SeZukte)
-                           (p : Prenu) : Set₁ where
+data Re'enjeJaCinmoSeZukte {a b c}
+                           (sz : Ka'e-SeZukte a)
+                           (p : Prenu) : Set (Level.suc a ⊔ Level.suc b ⊔ Level.suc c) where
   cnm : Zukte p sz
       → (sc : Zilkai)
       → (c : Co'eJaCinmo p sc sz)
       → Stace-Zi'o p c
       → Re'enjeJaCinmoSeZukte sz p
-  smn : {A B : Set}
+  smn : {B : Set b} → {C : Set c}
+      → (x : C)
       → Zukte p sz
-      → (sm : Smuni A B p)
+      → (sm : Smuni B x p)
       → Stace-Zi'o p sm
       → Re'enjeJaCinmoSeZukte sz p
 \end{code}
@@ -167,16 +169,17 @@ data Re'enjeJaCinmoSeZukte (sz : Ka'e-SeZukte)
 \section{le me'oi .Dada.\ mupli / The Dada Example}
 
 \begin{code}
-record IsDada (d : Ka'e-SeZukte) : Set₁ where
+record IsDada {a} (d : Ka'e-SeZukte a) : Set (Level.suc a) where
   field
     p : Prenu
-    rjcsz : Re'enjeJaCinmoSeZukte d p
+    rjcsz : Re'enjeJaCinmoSeZukte {b = Level.zero} {Level.zero} d p
     ns : Nonselsmu d p
 \end{code}
 
 \begin{code}
-module _ (p : Prenu)
-         (k : Ka'e-SeZukte)
+module _ {a}
+         (p : Prenu)
+         (k : Ka'e-SeZukte a)
          (r : Zukte p k)
          (zk : Zilkai)
          (cm : Co'eJaCinmo p zk k)
