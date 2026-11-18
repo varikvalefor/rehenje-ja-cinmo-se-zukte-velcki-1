@@ -219,6 +219,9 @@ SIMPLIFICATION.\@  VARIK opines or believes that some event/(abstract state)/wha
 
 \begin{code}
 module SBP where
+\end{code}
+
+\begin{code}
   FackiSmuniLLM : ∀ {a}
                 → Set a
                 → String
