@@ -64,6 +64,8 @@ Gasnu : Prenu → Ka'e-Re'enjeJaCinmoSeZukte → Set
 Gasnu = {!!}
 \end{code}
 
+\section{le se ctaipe co su'u re'enje ja cinmo se zukte / The Type regarding Being Art}
+
 \begin{code}
 data Re'enjeJaCinmoSeZukte (sz : Ka'e-Re'enjeJaCinmoSeZukte)
                            (p : Prenu) : Set₁ where
