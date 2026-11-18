@@ -50,6 +50,8 @@ Stace-Zi'o : ∀ {a} → {A : Set a} → Prenu → A → Set a
 Stace-Zi'o = {!!}
 \end{code}
 
+\section{le se ctaipe Coke cumki ke re'enje ja cinmo se ctaipe / The Type of Possible Art}
+
 \begin{code}
 Ka'e-Re'enjeJaCinmoSeZukte : Set
 Ka'e-Re'enjeJaCinmoSeZukte = {!!}
