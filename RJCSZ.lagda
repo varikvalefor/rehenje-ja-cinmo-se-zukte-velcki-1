@@ -81,6 +81,8 @@ data Re'enjeJaCinmoSeZukte (sz : Ka'e-Re'enjeJaCinmoSeZukte)
       → Re'enjeJaCinmoSeZukte sz p
 \end{code}
 
+\section{le me'oi .Dada.\ mupli / The Dada Example}
+
 \begin{code}
 record IsDada (d : Ka'e-Re'enjeJaCinmoSeZukte) : Set₁ where
   field
