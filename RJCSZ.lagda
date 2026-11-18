@@ -270,11 +270,6 @@ A term of \F{Zi'oZi'oPruce} \B s exists iff \B s is the output of an artificial 
 \subsection{le ctaipe / The Proof}
 
 \begin{code}
-  open Dada
-    using (
-      IsDada
-    )
-
   module _ (p : Prenu)
            (s : String)
            (z : Zilkai)
@@ -282,7 +277,7 @@ A term of \F{Zi'oZi'oPruce} \B s exists iff \B s is the output of an artificial 
            (cm : Co'eJaCinmo p z $ Zi'oZi'oPruce s)
            (cms : Stace-Zi'o p $ Co'eJaCinmo p z $ Zi'oZi'oPruce s)
            (ns : Nonselsmu (Zi'oZi'oPruce s) p) where
-    _ : IsDada $ Zi'oZi'oPruce s
+    _ : Dada.IsDada $ Zi'oZi'oPruce s
     _ = record {
       p = p;
       rjcsz = cnm zuk z cm cms;
