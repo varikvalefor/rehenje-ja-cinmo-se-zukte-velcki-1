@@ -43,6 +43,8 @@ Co'eJaCinmo : ∀ {a} → {A : Set a} → Prenu → Selkai → A → Set a
 Co'eJaCinmo = {!!}
 \end{code}
 
+\section{le se ctaipe co su'u stace / The Type regarding Sincerity}
+
 \begin{code}
 Stace-Zi'o : ∀ {a} → {A : Set a} → Prenu → A → Set a
 Stace-Zi'o = {!!}
