@@ -57,7 +57,9 @@ open import Data.String
   )
 \end{code}
 
-\section{le prenu se ctaipe / The Prenu Type}
+\section{le jicmu / The Basic}
+
+\subsection{le prenu se ctaipe / The Prenu Type}
 \paragraph{la .lojban.}
 ni'o la'oi .\F{Prenu}.\ se ctaipe lo co'e ja sinxa be lo prenu\\
 .i la .varik.\ na jinvi le du'u lo prenu cu ctaipe lo su'o co'e\sds  .i la'e di'u lijda co'e
@@ -71,7 +73,7 @@ Prenu : Set
 Prenu = {!!}
 \end{code}
 
-\section{le se ctaipe co su'u smuni / The Type regarding Being Meaningful}
+\subsection{le se ctaipe co su'u smuni / The Type regarding Being Meaningful}
 \paragraph{la .lojban.}
 ni'o ga jo ctaipe la'e zoi zoi.\ \F{Smuni} \B s \B x \B p\ .zoi.\ gi la'e zo'oi .\B s.\ smuni la'e zo'oi .\B x.\ lo prenu je ke se sinxa be la'e zo'oi .\B p.
 
@@ -83,7 +85,7 @@ Smuni : ∀ {a b} → {A : Set a} → Set b → A → Prenu → Set (a ⊔ b)
 Smuni = {!!}
 \end{code}
 
-\section{le se ctaipe co su'u nonselsmu / The Type regarding Being Nonsense}
+\subsection{le se ctaipe co su'u nonselsmu / The Type regarding Being Nonsense}
 \paragraph{la .lojban.}
 ni'o ga jo ctaipe la'e zoi zoi.\ \F{Nonselsmu} \B x \B p\ .zoi.\ gi la'e zo'oi .\B x.\ nonselsmu lo prenu je ke se sinxa be la'e zo'oi .\B p.
 
@@ -95,7 +97,7 @@ Nonselsmu : ∀ {a} → {A : Set a} → A → Prenu → Set a
 Nonselsmu = {!!}
 \end{code}
 
-\section{le selkai se ctaipe / The Property/Quality Type}
+\subsection{le selkai se ctaipe / The Property/Quality Type}
 \paragraph{la .lojban.}
 ni'o lo ro co'e cu ctaipe la'oi .\F{Zilkai}.\ jo cu sinxa lo su'o zilkai
 
@@ -107,7 +109,7 @@ Zilkai : Set
 Zilkai = {!!}
 \end{code}
 
-\section{le se ctaipe co su'u co'e ja cinmo / The Type regarding Feeling}
+\subsection{le se ctaipe co su'u co'e ja cinmo / The Type regarding Feeling}
 \paragraph{la .lojban.}
 ni'o ga jo ctaipe la'e zoi zoi.\ \F{Co'eJaCinmo} \B p \B z \B x\ .zoi.\ gi lo prenu je ke se sinxa be la'e zo'oi .\B p.\ cu cinmo lo se sinxa be la'e zo'oi .\B z.\ la'e zo'oi .\B x.
 
@@ -119,7 +121,7 @@ Co'eJaCinmo : ∀ {a} → {A : Set a} → Prenu → Zilkai → A → Set a
 Co'eJaCinmo = {!!}
 \end{code}
 
-\section{le se ctaipe co su'u stace / The Type regarding Sincerity}
+\subsection{le se ctaipe co su'u stace / The Type regarding Sincerity}
 \paragraph{la .lojban.}
 ni'o ga jo ctaipe la'e zoi zoi.\ \F{Stace-Zi'o} \B p \B z\ .zoi.\ gi lo prenu je ke se sinxa be la'e zo'oi .\B p.\ cu prane lo ka ce'u stace zi'o la'e zo'oi .\B z.
 
@@ -131,14 +133,14 @@ Stace-Zi'o : ∀ {a} → {A : Set a} → Prenu → A → Set a
 Stace-Zi'o = {!!}
 \end{code}
 
-\section{le se ctaipe Coke cumki ke re'enje ja cinmo se ctaipe / The Type of Possible Art}
+\subsection{le se ctaipe Coke cumki ke re'enje ja cinmo se ctaipe / The Type of Possible Art}
 
 \begin{code}
 Ka'e-SeZukte : ∀ a → Set (Level.suc a)
 Ka'e-SeZukte = {!!}
 \end{code}
 
-\section{le se ctaipe co su'u zukte / The Type regarding Enacting Things}
+\subsection{le se ctaipe co su'u zukte / The Type regarding Enacting Things}
 \paragraph{la .lojban.}
 ni'o ga jo ctaipe la'e zoi zoi.\ \F{Zukte} \B p \B z\ .zoi.\ gi lo prenu je ke se sinxa be la'e zo'oi .\B p.\ cu zukte la'e zo'oi .\B z.
 
