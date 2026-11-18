@@ -3,11 +3,6 @@ open import Level
   using (
     _⊔_
   )
-open import Data.Product
-  as Σ
-  using (
-    Σ
-  )
 \end{code}
 
 \begin{code}
