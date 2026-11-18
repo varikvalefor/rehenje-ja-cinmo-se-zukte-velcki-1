@@ -47,6 +47,10 @@ open import Level
   using (
     _⊔_
   )
+open import Data.String
+  using (
+    String
+  )
 \end{code}
 
 \section{le prenu se ctaipe / The Prenu Type}
@@ -190,5 +194,35 @@ module _ {a}
     where
     RJCSZ : Re'enjeJaCinmoSeZukte k p
     RJCSZ = cnm r zk cm sc
+\end{code}
+
+\section{le skami besna pe'a mupli / The Artificial (Neural Network) Example}
+\paragraph{la .lojban.}
+ni'o sa'u la .varik.\ cu jinvi ja krici le du'u lo su'o su'u zbasu pe'a lo smuni be lo te pruce be f lo skami besna pe'a cu re'enje ja cinmo se zukte
+
+\paragraph{English}
+SIMPLIFICATION.\@  VARIK opines or believes that some event of assigning (to the output of an artificial (neural network)) meaning is art.
+
+
+\begin{code}
+FackiSeSmuniLLM : ∀ {a} → Set a → String → Prenu → Ka'e-SeZukte (Level.suc a)
+FackiSeSmuniLLM = {!!}
+
+SeSmuniLLM→Smuni : ∀ {a}
+                 → (A : Set a)
+                 → (s : String)
+                 → (p : Prenu)
+                 → Zukte p (FackiSeSmuniLLM A s p)
+                 → Smuni A s p
+SeSmuniLLM→Smuni = {!!}
+
+module _ {a}
+         (p : Prenu)
+         (A : Set a)
+         (s : String)
+         (zsml : Zukte p (FackiSeSmuniLLM A s p))
+         (zstc : Stace-Zi'o p (Smuni A s p)) where
+  _ : Re'enjeJaCinmoSeZukte (FackiSeSmuniLLM A s p) p
+  _ = smn {B = A} s zsml (SeSmuniLLM→Smuni A s p zsml) zstc
 \end{code}
 \end{document}
