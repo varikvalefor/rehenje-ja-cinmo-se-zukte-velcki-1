@@ -34,7 +34,9 @@ Co'eJaCinmo = {!!}
 \begin{code}
 Stace-Zi'o : ∀ {a} → {A : Set a} → Prenu → A → Set a
 Stace-Zi'o = {!!}
+\end{code}
 
+\begin{code}
 Ka'e-Re'enjeJaCinmoSeZukte : Set
 Ka'e-Re'enjeJaCinmoSeZukte = {!!}
 
