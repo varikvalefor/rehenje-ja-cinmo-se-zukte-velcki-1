@@ -90,7 +90,7 @@ Ka'e-Re'enjeJaCinmoSeZukte : Set
 Ka'e-Re'enjeJaCinmoSeZukte = {!!}
 \end{code}
 
-\section{le se ctaipe co su'u gasnu / The Type regarding Causing Things}
+\section{le se ctaipe co su'u zukte / The Type regarding Enacting Things}
 
 \begin{code}
 Zukte : Prenu → Ka'e-Re'enjeJaCinmoSeZukte → Set
