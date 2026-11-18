@@ -29,7 +29,9 @@ Selkai = {!!}
 \begin{code}
 Co'eJaCinmo : ∀ {a} → {A : Set a} → Prenu → Selkai → A → Set a
 Co'eJaCinmo = {!!}
+\end{code}
 
+\begin{code}
 Stace-Zi'o : ∀ {a} → {A : Set a} → Prenu → A → Set a
 Stace-Zi'o = {!!}
 
