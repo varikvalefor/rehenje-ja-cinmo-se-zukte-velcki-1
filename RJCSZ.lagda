@@ -29,7 +29,7 @@ Nonselsmu : ∀ {a} → {A : Set a} → A → Prenu → Set a
 Nonselsmu = {!!}
 \end{code}
 
-\section{le selkai se ctaipe / The Type regarding Being a Property/Quality}
+\section{le selkai se ctaipe / The Property/Quality Type}
 
 \begin{code}
 Selkai : Set
