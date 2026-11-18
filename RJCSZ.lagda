@@ -39,7 +39,9 @@ Stace-Zi'o = {!!}
 \begin{code}
 Ka'e-Re'enjeJaCinmoSeZukte : Set
 Ka'e-Re'enjeJaCinmoSeZukte = {!!}
+\end{code}
 
+\begin{code}
 Rinka : Prenu → Ka'e-Re'enjeJaCinmoSeZukte → Set
 Rinka = {!!}
 
