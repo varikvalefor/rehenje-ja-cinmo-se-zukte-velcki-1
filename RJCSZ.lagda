@@ -14,7 +14,9 @@ Prenu = {!!}
 \begin{code}
 Smuni : ∀ {a b} → {A : Set a} → Set b → A → Prenu → Set (a ⊔ b)
 Smuni = {!!}
+\end{code}
 
+\begin{code}
 Nonselsmu : ∀ {a} → {A : Set a} → A → Prenu → Set a
 Nonselsmu = {!!}
 
