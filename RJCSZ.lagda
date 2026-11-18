@@ -36,6 +36,8 @@ Selkai : Set
 Selkai = {!!}
 \end{code}
 
+\section{le se ctaipe co su'u co'e ja cinmo / The Type regarding Feeling}
+
 \begin{code}
 Co'eJaCinmo : ∀ {a} → {A : Set a} → Prenu → Selkai → A → Set a
 Co'eJaCinmo = {!!}
