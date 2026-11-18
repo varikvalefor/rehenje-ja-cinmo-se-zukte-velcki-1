@@ -60,20 +60,20 @@ Ka'e-Re'enjeJaCinmoSeZukte = {!!}
 \section{le se ctaipe co su'u gasnu / The Type regarding Causing Things}
 
 \begin{code}
-Rinka : Prenu → Ka'e-Re'enjeJaCinmoSeZukte → Set
-Rinka = {!!}
+Gasnu : Prenu → Ka'e-Re'enjeJaCinmoSeZukte → Set
+Gasnu = {!!}
 \end{code}
 
 \begin{code}
 data Re'enjeJaCinmoSeZukte (sz : Ka'e-Re'enjeJaCinmoSeZukte)
                            (p : Prenu) : Set₁ where
-  cnm : Rinka p sz
+  cnm : Gasnu p sz
       → (sc : Selkai)
       → (c : Co'eJaCinmo p sc sz)
       → Stace-Zi'o p c
       → Re'enjeJaCinmoSeZukte sz p
   smn : {A B : Set}
-      → Rinka p sz
+      → Gasnu p sz
       → (sm : Smuni A B p)
       → Stace-Zi'o p sm
       → Re'enjeJaCinmoSeZukte sz p
@@ -90,7 +90,7 @@ record IsDada (d : Ka'e-Re'enjeJaCinmoSeZukte) : Set₁ where
 \begin{code}
 module _ (p : Prenu)
          (k : Ka'e-Re'enjeJaCinmoSeZukte)
-         (r : Rinka p k)
+         (r : Gasnu p k)
          (sk : Selkai)
          (cm : Co'eJaCinmo p sk k)
          (sc : Stace-Zi'o p cm)
