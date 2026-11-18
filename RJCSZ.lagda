@@ -32,6 +32,14 @@
 
 \maketitle
 
+\begin{abstract}
+	\paragraph{la .lojban.}
+	ni'o la .varik.\ cu ciksi le smuni be lu re'enje ja cinmo se zukte bei vo'a bau la'oi .Agda.\ joi la .lojban.\ldots fo le na te birti be vo'a\ sds  .i le te tcidu cu jai cipra fi le smuni\sds  .i la .varik. na co'e ja djica lo nu panra vo'a zo'e ja le smuni be lu re'enje ja cinmo se zukte li'u fa lo prenu jenai ke du be vo'a
+
+	\paragraph{English}
+	VARIK defines (with English and Agda) the meaning (for VARIK) of ``art''.  The document is a test for the meaning.  VARIK does not desire/whatever that prenu which are not VARIK resemble (with regard to the meaning (of ``art'') or whatever) VARIK.
+\end{abstract}
+
 \section{le vrici / The Miscellaneous}
 
 \begin{code}
