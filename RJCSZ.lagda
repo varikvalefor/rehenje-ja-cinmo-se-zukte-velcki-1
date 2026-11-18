@@ -19,7 +19,9 @@ Smuni = {!!}
 \begin{code}
 Nonselsmu : ∀ {a} → {A : Set a} → A → Prenu → Set a
 Nonselsmu = {!!}
+\end{code}
 
+\begin{code}
 Selkai : Set
 Selkai = {!!}
 
