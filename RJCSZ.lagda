@@ -176,29 +176,33 @@ data Re'enjeJaCinmoSeZukte {a b c}
 \section{le me'oi .Dada.\ mupli / The Dada Example}
 
 \begin{code}
-record IsDada {a}
-              (d : Ka'e-SeZukte a) :
-              Set (Level.suc (Level.suc a)) where
-  field
-    p : Prenu
-    rjcsz : Re'enjeJaCinmoSeZukte {b = Level.zero} {Level.zero} d p
-    ns : Nonselsmu d p
+module Dada where
 \end{code}
 
 \begin{code}
-module Dada {a}
-            (p : Prenu)
-            (k : Ka'e-SeZukte a)
-            (r : Zukte p k)
-            (zk : Zilkai)
-            (cm : Co'eJaCinmo p zk k)
-            (sc : Stace-Zi'o p (Co'eJaCinmo p zk k))
-            (ns : Nonselsmu k p) where
-  _ : IsDada k
-  _ = record {rjcsz = RJCSZ; ns = ns}
-    where
-    RJCSZ : Re'enjeJaCinmoSeZukte k p
-    RJCSZ = cnm r zk cm sc
+  record IsDada {a}
+                (d : Ka'e-SeZukte a) :
+                Set (Level.suc (Level.suc a)) where
+    field
+      p : Prenu
+      rjcsz : Re'enjeJaCinmoSeZukte {b = Level.zero} {Level.zero} d p
+      ns : Nonselsmu d p
+\end{code}
+
+\begin{code}
+  module _ {a}
+           (p : Prenu)
+           (k : Ka'e-SeZukte a)
+           (r : Zukte p k)
+           (zk : Zilkai)
+           (cm : Co'eJaCinmo p zk k)
+           (sc : Stace-Zi'o p (Co'eJaCinmo p zk k))
+           (ns : Nonselsmu k p) where
+    _ : IsDada k
+    _ = record {rjcsz = RJCSZ; ns = ns}
+      where
+      RJCSZ : Re'enjeJaCinmoSeZukte k p
+      RJCSZ = cnm r zk cm sc
 \end{code}
 
 \section{le skami besna pe'a mupli / The Artificial (Neural Network) Example}
