@@ -11,6 +11,7 @@
 \usepackage{newunicodechar}
 
 \newunicodechar{∀}{\ensuremath{\mathnormal\forall}}
+\newunicodechar{⊔}{\ensuremath{\mathnormal\sqcup}}
 \newunicodechar{λ}{\ensuremath{\mathnormal\lambda}}
 \newunicodechar{♯}{\ensuremath{\mathnormal\sharp}}
 \newunicodechar{∘}{\ensuremath{\mathnormal\circ}}
