@@ -90,14 +90,14 @@ Nonselsmu = {!!}
 \section{le selkai se ctaipe / The Property/Quality Type}
 
 \begin{code}
-Selkai : Set
-Selkai = {!!}
+Zilkai : Set
+Zilkai = {!!}
 \end{code}
 
 \section{le se ctaipe co su'u co'e ja cinmo / The Type regarding Feeling}
 
 \begin{code}
-Co'eJaCinmo : ∀ {a} → {A : Set a} → Prenu → Selkai → A → Set a
+Co'eJaCinmo : ∀ {a} → {A : Set a} → Prenu → Zilkai → A → Set a
 Co'eJaCinmo = {!!}
 \end{code}
 
@@ -128,7 +128,7 @@ Zukte = {!!}
 data Re'enjeJaCinmoSeZukte (sz : Ka'e-Re'enjeJaCinmoSeZukte)
                            (p : Prenu) : Set₁ where
   cnm : Zukte p sz
-      → (sc : Selkai)
+      → (sc : Zilkai)
       → (c : Co'eJaCinmo p sc sz)
       → Stace-Zi'o p c
       → Re'enjeJaCinmoSeZukte sz p
@@ -153,7 +153,7 @@ record IsDada (d : Ka'e-Re'enjeJaCinmoSeZukte) : Set₁ where
 module _ (p : Prenu)
          (k : Ka'e-Re'enjeJaCinmoSeZukte)
          (r : Zukte p k)
-         (sk : Selkai)
+         (sk : Zilkai)
          (cm : Co'eJaCinmo p sk k)
          (sc : Stace-Zi'o p cm)
          (ns : Nonselsmu k p) where
