@@ -1,4 +1,34 @@
+\documentclass{article}
+
+\usepackage{ar}
+\usepackage[bw]{agda}
+\usepackage{ifsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{parskip}
+\usepackage{mathabx}
+\usepackage{unicode-math}
+\usepackage{newunicodechar}
+
+\newunicodechar{λ}{\ensuremath{\mathnormal\lambda}}
+\newunicodechar{♯}{\ensuremath{\mathnormal\sharp}}
+\newunicodechar{∘}{\ensuremath{\mathnormal\circ}}
+\newunicodechar{₀}{\ensuremath{\mathnormal{{}_0}}}
+
+\newcommand\Sym\AgdaSymbol
+\newcommand\D\AgdaDatatype
+\newcommand\F\AgdaFunction
+\newcommand\B\AgdaBound
+\newcommand\OpF[1]{\AgdaOperator{\F{#1}}}
+
+\newcommand\sds{\spacefactor\sfcode`.\ \space}
+
+\title{le cipra velcki be le smuni be lu re'enje ja cinmo se zbasu bei la .varik.\ / A Test Definition of the Meaning (for VARIK) of ``Art''}
+\author{la .varik.\ .VALefor.}
 \begin{document}
+
+\maketitle
+
 \section{le vrici / The Miscellaneous}
 
 \begin{code}
