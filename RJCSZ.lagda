@@ -30,7 +30,8 @@ Ka'e-Re'enjeJaCinmoSeZukte = {!!}
 Rinka : Prenu → Ka'e-Re'enjeJaCinmoSeZukte → Set
 Rinka = {!!}
 
-data Re'enjeJaCinmoSeZukte (sz : Ka'e-Re'enjeJaCinmoSeZukte) (p : Prenu) : Set₁ where
+data Re'enjeJaCinmoSeZukte (sz : Ka'e-Re'enjeJaCinmoSeZukte)
+                           (p : Prenu) : Set₁ where
   cnm : Rinka p sz
       → (sc : Selkai)
       → (c : Co'eJaCinmo p sc sz)
