@@ -24,7 +24,9 @@ Nonselsmu = {!!}
 \begin{code}
 Selkai : Set
 Selkai = {!!}
+\end{code}
 
+\begin{code}
 Co'eJaCinmo : ∀ {a} → {A : Set a} → Prenu → Selkai → A → Set a
 Co'eJaCinmo = {!!}
 
