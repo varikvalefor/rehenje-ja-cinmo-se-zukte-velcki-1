@@ -157,13 +157,13 @@ SIMPLIFICATION.\@  \D{Re'enjeJaCinmoSeZukte} terms are proofs (under an uncertai
 data Re'enjeJaCinmoSeZukte {a b c}
                            (sz : Ka'e-SeZukte a)
                            (p : Prenu) :
-                           Set (Level.suc a ⊔
+                           Set (Level.suc (Level.suc a) ⊔
                                 Level.suc b ⊔
                                 Level.suc c) where
   cnm : Zukte p sz
       → (sc : Zilkai)
-      → (c : Co'eJaCinmo p sc sz)
-      → Stace-Zi'o p c
+      → Co'eJaCinmo p sc sz
+      → Stace-Zi'o p (Co'eJaCinmo p sc sz)
       → Re'enjeJaCinmoSeZukte sz p
   smn : {B : Set b} → {C : Set c}
       → (x : C)
@@ -176,7 +176,7 @@ data Re'enjeJaCinmoSeZukte {a b c}
 \section{le me'oi .Dada.\ mupli / The Dada Example}
 
 \begin{code}
-record IsDada {a} (d : Ka'e-SeZukte a) : Set (Level.suc a) where
+record IsDada {a} (d : Ka'e-SeZukte a) : Set (Level.suc (Level.suc a)) where
   field
     p : Prenu
     rjcsz : Re'enjeJaCinmoSeZukte {b = Level.zero} {Level.zero} d p
@@ -196,7 +196,7 @@ module _ {a}
   _ = record {rjcsz = RJCSZ; ns = ns}
     where
     RJCSZ : Re'enjeJaCinmoSeZukte k p
-    RJCSZ = cnm r zk cm sc
+    RJCSZ = cnm r zk cm {!!}
 \end{code}
 
 \section{le skami besna pe'a mupli / The Artificial (Neural Network) Example}
