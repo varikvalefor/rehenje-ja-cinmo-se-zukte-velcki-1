@@ -186,14 +186,14 @@ record IsDada {a}
 \end{code}
 
 \begin{code}
-module _ {a}
-         (p : Prenu)
-         (k : Ka'e-SeZukte a)
-         (r : Zukte p k)
-         (zk : Zilkai)
-         (cm : Co'eJaCinmo p zk k)
-         (sc : Stace-Zi'o p (Co'eJaCinmo p zk k))
-         (ns : Nonselsmu k p) where
+module Dada {a}
+            (p : Prenu)
+            (k : Ka'e-SeZukte a)
+            (r : Zukte p k)
+            (zk : Zilkai)
+            (cm : Co'eJaCinmo p zk k)
+            (sc : Stace-Zi'o p (Co'eJaCinmo p zk k))
+            (ns : Nonselsmu k p) where
   _ : IsDada k
   _ = record {rjcsz = RJCSZ; ns = ns}
     where
