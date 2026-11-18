@@ -112,6 +112,11 @@ Co'eJaCinmo = {!!}
 \end{code}
 
 \section{le se ctaipe co su'u stace / The Type regarding Sincerity}
+\paragraph{la .lojban.}
+ni'o ga jo ctaipe la'e zoi zoi.\ \F{Stace-Zi'o} \B p \B z\ .zoi.\ gi lo prenu je ke se sinxa be la'e zo'oi .\B p.\ cu prane lo ka ce'u stace zi'o la'e zo'oi .\B z.
+
+\paragraph{English}
+A term of \F{Stace-Zi'o} \B p \B z exists iff the prenu which is represented by \B p is perfectly sincere about \B z.
 
 \begin{code}
 Stace-Zi'o : ∀ {a} → {A : Set a} → Prenu → A → Set a
