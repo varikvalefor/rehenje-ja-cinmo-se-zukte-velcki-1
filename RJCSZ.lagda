@@ -88,6 +88,11 @@ Nonselsmu = {!!}
 \end{code}
 
 \section{le selkai se ctaipe / The Property/Quality Type}
+\paragraph{la .lojban.}
+ni'o lo ro co'e cu ctaipe la'oi .\F{Zilkai}.\ jo cu sinxa lo su'o zilkai
+
+\paragraph{English}
+For all $x$, $x$ is a term of \F{Zilkai} iff $x$ represents some property/quality.
 
 \begin{code}
 Zilkai : Set
