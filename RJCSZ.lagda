@@ -221,6 +221,13 @@ SIMPLIFICATION.\@  VARIK opines or believes that some event/(abstract state)/wha
 module SBP where
 \end{code}
 
+\subsection{le se ctaipe co su'u zbasu pe'a lo smuni / The Types Regarding Assigning Meaning}
+\paragraph{la .lojban.}
+ni'o ga jo ctaipe la'e zoi zoi.\ \F{FackiSmuniLLM} \B s \B x \B p\ .zoi.\ gi la'e zo'oi .\B x.\ jai te pruce fi lo skami besna pe'a je cu se smuni la'e zo'oi .\B s.\ lo prenu je ke se sinxa be la'e zo'oi .\B p.
+
+\paragraph{la .lojban.}
+A term of \F{FackiSmuniLLM} \B s \B x \B p exists iff (\B x is the output of an artificial (neural network), and \B s is the meaning (to \B p) of \B x).
+
 \begin{code}
   FackiSmuniLLM : ∀ {a}
                 → Set a
@@ -229,6 +236,8 @@ module SBP where
                 → Ka'e-SeZukte (Level.suc a)
   FackiSmuniLLM = {!!}
 \end{code}
+
+\subsection{le vrici je fancu / Miscellaneous Functions}
 
 \begin{code}
   SmuniLLM→Smuni : ∀ {a}
@@ -239,6 +248,8 @@ module SBP where
                  → Smuni A s p
   SmuniLLM→Smuni = {!!}
 \end{code}
+
+\subsection{le ctaipe / The Proof}
 
 \begin{code}
   module _ {a}
