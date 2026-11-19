@@ -228,17 +228,18 @@ module SBP where
 
 \subsection{le se ctaipe co su'u zbasu pe'a lo smuni / The Types Regarding Assigning Meaning}
 \paragraph{la .lojban.}
-ni'o ga jo ctaipe la'e zoi zoi.\ \F{FsLlm} \B s \B x \B p\ .zoi.\ gi la'e zo'oi .\B x.\ jai te pruce fi lo skami besna pe'a je cu se smuni la'e zo'oi .\B s.\ lo prenu je ke se sinxa be la'e zo'oi .\B p.
+ni'o ga jo ctaipe la'e zoi zoi.\ \F{FsLlm} \B s \B x \B p \B k\ .zoi.\ gi la'e zo'oi .\B k.\ cu su'u .\B x.\ jai te pruce fi lo skami besna pe'a je cu se smuni la'e zo'oi .\B s.\ lo prenu je ke se sinxa be la'e zo'oi .\B p.
 
 \paragraph{la .lojban.}
-A term of \F{FsLlm} \B s \B x \B p exists iff (\B x is the output of an artificial (neural network), and \B s is the meaning (to \B p) of \B x).
+A term of \F{FsLlm} \B s \B x \B p \B k exists iff \B k is some process/event/(abstract state) of that (\B x is the output of an artificial (neural network), and \B s is the meaning (to \B p) of \B x).
 
 \begin{code}
   FsLlm : ∀ {a}
         → Set a
         → String
         → Prenu
-        → Ka'e-SeZukte (suc a)
+        → Ka'e-SeZukte a
+        → Set a
   FsLlm = {!!}
 \end{code}
 
@@ -250,10 +251,12 @@ A term of \F{FsLlm} \B s \B x \B p exists iff (\B x is the output of an artifici
            (B : Set b)
            (p : Prenu)
            (s : String)
-           (zsml : Zukte p $ FsLlm A s p)
-           (sm : Smuni B (FsLlm A s p) p)
-           (zstc : Stace-Zi'o p $ Smuni B (FsLlm A s p) p) where
-    _ : Re'enjeJaCinmoSeZukte (FsLlm A s p) p
+           (ksz : Ka'e-SeZukte a)
+           (fsllm : FsLlm A s p ksz)
+           (zsml : Zukte p ksz)
+           (sm : Smuni B ksz p)
+           (zstc : Stace-Zi'o p $ Smuni B ksz p) where
+    _ : Re'enjeJaCinmoSeZukte ksz p
     _ = smn {B = B} zsml sm zstc
 \end{code}
 
