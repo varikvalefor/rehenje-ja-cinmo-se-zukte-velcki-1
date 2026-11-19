@@ -64,7 +64,7 @@ open import Data.String
 \subsection{le prenu se ctaipe / The Prenu Type}
 \paragraph{la .lojban.}
 ni'o la'oi .\F{Prenu}.\ se ctaipe lo co'e ja sinxa be lo prenu\\
-.i la .varik.\ na jinvi le du'u lo prenu cu ctaipe lo su'o co'e\sds  .i la'e di'u lijda co'e
+.i la .varik.\ na jinvi le du'u lo prenu cu ctaipe lo su'o co'e\sds  .i la'e di'u lijda co'e\\
 
 \paragraph{English}
 \F{Prenu} is the type of representations/whatever of prenu.\\
@@ -101,10 +101,10 @@ Nonselsmu = {!!}
 
 \subsection{le selkai se ctaipe / The Property/Quality Type}
 \paragraph{la .lojban.}
-ni'o lo ro co'e cu ctaipe la'oi .\F{Zilkai}.\ jo cu sinxa lo su'o zilkai
+ni'o lo ro co'e cu ctaipe la'oi .\F{Zilkai}.\ jo cu sinxa lo su'o zilkai\sds  .i la .varik.\ cu zukte tu'a zo sinxa ki'u zo'e joi le su'u vo'a djica lo nu lo velcki cu sampu tu'a lo me'oi .level.
 
 \paragraph{English}
-For all $x$, $x$ is a term of \F{Zilkai} iff $x$ represents some property/quality.
+For all $x$, $x$ is a term of \F{Zilkai} iff $x$ represents some property/quality.  The reason for using ``represents'' is relevant to that (VARIK desires that the definition is simple with regard to levels.
 
 \begin{code}
 Zilkai : Set
