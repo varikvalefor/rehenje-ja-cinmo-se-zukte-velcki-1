@@ -235,10 +235,10 @@ A term of \F{FsLlm} \B s \B x \B p exists iff (\B x is the output of an artifici
 
 \begin{code}
   FsLlm : ∀ {a}
-                → Set a
-                → String
-                → Prenu
-                → Ka'e-SeZukte (suc a)
+        → Set a
+        → String
+        → Prenu
+        → Ka'e-SeZukte (suc a)
   FsLlm = {!!}
 \end{code}
 
