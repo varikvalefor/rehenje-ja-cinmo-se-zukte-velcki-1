@@ -297,6 +297,6 @@ A term of \F{Zi'oZi'oPruce} \B a \B s \B k exists iff \B k is some process/event
            (cms : Stace-Zi'o p $ Co'eJaCinmo p z ksz)
            (ns : Nonselsmu ksz p) where
     _ : Dada.IsDada ksz
-    _ = record {p = p; rjcsz = cnm zuk z cm cms; ns = ns}
+    _ = record {rjcsz = cnm zuk z cm cms; ns = ns; p = p}
 \end{code}
 \end{document}
