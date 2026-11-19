@@ -139,10 +139,10 @@ Stace-Zi'o = {!!}
 
 \subsection{le se ctaipe Coke cumki ke se zukte / The Type of Enactable Things}
 \paragraph{la .lojban.}
-ni'o ro da zo'u ga jo da ctaipe la'e zoi zoi.\ \F{Stace-Zi'o}\ .zoi.\ gi cumki fa lo su'o nu lo su'o cu zukte da
+ni'o ro da zo'u ga jo da ctaipe la'e zoi zoi.\ \F{Zukte}\ .zoi.\ gi cumki fa lo su'o nu lo su'o cu zukte da
 
 \paragraph{English}
-For all things $x$, $x$ is a term of \F{Stace-Zi'o} iff a thing which is possible is that some prenu enacts $x$.
+For all things $x$, $x$ is a term of \F{Zukte} iff a thing which is possible is that some prenu enacts $x$.
 
 \begin{code}
 Ka'e-SeZukte : ∀ a → Set (suc a)
