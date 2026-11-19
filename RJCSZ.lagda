@@ -212,10 +212,7 @@ module Dada where
            (sc : Stace-Zi'o p $ Co'eJaCinmo p zk k)
            (ns : Nonselsmu k p) where
     _ : IsDada k
-    _ = record {rjcsz = RJCSZ; ns = ns}
-      where
-      RJCSZ : Re'enjeJaCinmoSeZukte k p
-      RJCSZ = cnm r zk cm sc
+    _ = record {rjcsz = cnm r zk cm sc; ns = ns; p = p}
 \end{code}
 
 \section{le skami besna pe'a mupli / The Artificial (Neural Network) Example}
