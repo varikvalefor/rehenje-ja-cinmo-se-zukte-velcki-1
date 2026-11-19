@@ -169,22 +169,20 @@ ni'o sa'u ga je lo me'oi .\D{Re'enjeJaCinmoSeZukte} co'e cu ctaipe fi zo'e poi l
 SIMPLIFICATION.\@  \D{Re'enjeJaCinmoSeZukte} terms are proofs (under an uncertain (for VARIK) context) of that (stuff is art).  VARIK is not certain about whether VARIK believes that (for all prenu $p$, for all things $x$, $x$ is art of $p$ iff (some thing $s$ exists such that $p$ is perfectly sincere about that (($s$ is the meaning (to $p$) of $x$) or that ($p$ feels (about $x$) $s$))\ldots and $s$).  VARIK is not certain about whether \D{Re'enjeJaCinmoSeZukte} is perfectly in accordance with the meaning (for VARIK) of ``art''.
 
 \begin{code}
-data Re'enjeJaCinmoSeZukte {a b c}
+data Re'enjeJaCinmoSeZukte {a b}
                            (sz : Ka'e-SeZukte a)
                            (p : Prenu) :
                            Set (suc (suc a) ⊔
-                                suc b ⊔
-                                suc c) where
+                                suc b) where
   cnm : Zukte p sz
       → (sc : Zilkai)
       → Co'eJaCinmo p sc sz
       → Stace-Zi'o p (Co'eJaCinmo p sc sz)
       → Re'enjeJaCinmoSeZukte sz p
-  smn : {B : Set b} → {C : Set c}
+  smn : {B : Set b}
       → Zukte p sz
-      → (x : C)
-      → Smuni B x p
-      → Stace-Zi'o p (Smuni B x p)
+      → Smuni B sz p
+      → Stace-Zi'o p (Smuni B sz p)
       → Re'enjeJaCinmoSeZukte sz p
 \end{code}
 
@@ -200,7 +198,7 @@ module Dada where
                 Set (suc $ suc a) where
     field
       p : Prenu
-      rjcsz : Re'enjeJaCinmoSeZukte {b = zero} {zero} d p
+      rjcsz : Re'enjeJaCinmoSeZukte {b = zero} d p
       ns : Nonselsmu d p
 \end{code}
 
@@ -244,29 +242,19 @@ A term of \F{FackiSmuniLLM} \B s \B x \B p exists iff (\B x is the output of an 
   FackiSmuniLLM = {!!}
 \end{code}
 
-\subsection{le vrici je fancu / Miscellaneous Functions}
-
-\begin{code}
-  SmuniLLM→Smuni : ∀ {a}
-                 → (A : Set a)
-                 → (s : String)
-                 → (p : Prenu)
-                 → Zukte p $ FackiSmuniLLM A s p
-                 → Smuni A s p
-  SmuniLLM→Smuni = {!!}
-\end{code}
-
 \subsection{le ctaipe / The Proof}
 
 \begin{code}
-  module _ {a}
+  module _ {a b}
            (p : Prenu)
            (A : Set a)
+           (B : Set b)
            (s : String)
            (zsml : Zukte p $ FackiSmuniLLM A s p)
-           (zstc : Stace-Zi'o p $ Smuni A s p) where
+           (sm : Smuni B (FackiSmuniLLM A s p) p)
+           (zstc : Stace-Zi'o p $ Smuni B (FackiSmuniLLM A s p) p) where
     _ : Re'enjeJaCinmoSeZukte (FackiSmuniLLM A s p) p
-    _ = smn {B = A} zsml s (SmuniLLM→Smuni A s p zsml) zstc
+    _ = smn {B = B} zsml sm zstc
 \end{code}
 
 \section{le me'oi .Dada.\ mupli je ke srana be lo skami besna pe'a / The Dada Example which is Relevant to Artificial (Neural Networks)}
