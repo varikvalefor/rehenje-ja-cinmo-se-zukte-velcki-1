@@ -225,7 +225,6 @@ ni'o sa'u la .varik.\ cu jinvi ja krici le du'u lo su'o su'u zbasu pe'a lo smuni
 \paragraph{English}
 SIMPLIFICATION.\@  VARIK opines or believes that some event/(abstract state)/whatever of assigning (to the output of an artificial (neural network)) meaning is art.  But VARIK does not believe that all things which are output by artificial (neural networks) are art.
 
-
 \begin{code}
 module SBP where
 \end{code}
