@@ -273,13 +273,13 @@ module SBP-Dada where
 
 \subsection{le se ctaipe co su'u pruce fa tu'a lo skami besna pe'a / The Type regarding being the Output of an Artificial (Neural Network)}
 \paragraph{la .lojban.}
-ni'o ga jo ctaipe la'e zoi zoi.\ \F{Zi'oZi'oPruce} \B a \B s \B k\ .zoi.\ gi la'e zo'oi .\B k.\ su'u lo skami besna pe'a cu jai pruce fi la'e zo'oi .\B s.
+ni'o ga jo ctaipe la'e zoi zoi.\ \F{Zi'oZi'oPruce} \B s \B k\ .zoi.\ gi la'e zo'oi .\B k.\ su'u lo skami besna pe'a cu jai pruce fi la'e zo'oi .\B s.
 
 \paragraph{English}
-A term of \F{Zi'oZi'oPruce} \B a \B s \B k exists iff \B k is some process/event/(abstract state) of that (some artificial (neural network) outputs \B s).
+A term of \F{Zi'oZi'oPruce} \B s \B k exists iff \B k is some process/event/(abstract state) of that (some artificial (neural network) outputs \B s).
 
 \begin{code}
-  Zi'oZi'oPruce : ∀ a → String → Ka'e-SeZukte a → Set a
+  Zi'oZi'oPruce : ∀ {a} → String → Ka'e-SeZukte a → Set a
   Zi'oZi'oPruce = {!!}
 \end{code}
 
@@ -291,7 +291,7 @@ A term of \F{Zi'oZi'oPruce} \B a \B s \B k exists iff \B k is some process/event
            (s : String)
            (z : Zilkai)
            (ksz : Ka'e-SeZukte a)
-           (zzp : Zi'oZi'oPruce a s ksz)
+           (zzp : Zi'oZi'oPruce s ksz)
            (zuk : Zukte p ksz)
            (cm : Co'eJaCinmo p z ksz)
            (cms : Stace-Zi'o p $ Co'eJaCinmo p z ksz)
