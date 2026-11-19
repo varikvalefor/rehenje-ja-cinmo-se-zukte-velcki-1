@@ -48,6 +48,7 @@
 open import Level
   using (
     zero;
+    suc;
     _⊔_
   )
 open import Function
@@ -144,7 +145,7 @@ ni'o ro da zo'u ga jo da ctaipe la'e zoi zoi.\ \F{Stace-Zi'o}\ .zoi.\ gi cumki f
 For all things $x$, $x$ is a term of \F{Stace-Zi'o} iff a thing which is possible is that some prenu enacts $x$.
 
 \begin{code}
-Ka'e-SeZukte : ∀ a → Set (Level.suc a)
+Ka'e-SeZukte : ∀ a → Set (suc a)
 Ka'e-SeZukte = {!!}
 \end{code}
 
@@ -156,7 +157,7 @@ ni'o ga jo ctaipe la'e zoi zoi.\ \F{Zukte} \B p \B z\ .zoi.\ gi lo prenu je ke s
 A term of \F{Stace-Zi'o} \B p \B z exists iff the prenu which is represented by \B p enacts \B z.
 
 \begin{code}
-Zukte : ∀ {a} → Prenu → Ka'e-SeZukte a → Set (Level.suc a)
+Zukte : ∀ {a} → Prenu → Ka'e-SeZukte a → Set (suc a)
 Zukte = {!!}
 \end{code}
 
@@ -171,9 +172,9 @@ SIMPLIFICATION.\@  \D{Re'enjeJaCinmoSeZukte} terms are proofs (under an uncertai
 data Re'enjeJaCinmoSeZukte {a b c}
                            (sz : Ka'e-SeZukte a)
                            (p : Prenu) :
-                           Set (Level.suc (Level.suc a) ⊔
-                                Level.suc b ⊔
-                                Level.suc c) where
+                           Set (suc (suc a) ⊔
+                                suc b ⊔
+                                suc c) where
   cnm : Zukte p sz
       → (sc : Zilkai)
       → Co'eJaCinmo p sc sz
@@ -196,7 +197,7 @@ module Dada where
 \begin{code}
   record IsDada {a}
                 (d : Ka'e-SeZukte a) :
-                Set (Level.suc $ Level.suc a) where
+                Set (suc $ suc a) where
     field
       p : Prenu
       rjcsz : Re'enjeJaCinmoSeZukte {b = zero} {zero} d p
@@ -239,7 +240,7 @@ A term of \F{FackiSmuniLLM} \B s \B x \B p exists iff (\B x is the output of an 
                 → Set a
                 → String
                 → Prenu
-                → Ka'e-SeZukte (Level.suc a)
+                → Ka'e-SeZukte (suc a)
   FackiSmuniLLM = {!!}
 \end{code}
 
