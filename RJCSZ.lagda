@@ -116,7 +116,7 @@ Zilkai = {!!}
 ni'o ga jo ctaipe la'e zoi zoi.\ \F{Co'eJaCinmo} \B p \B z \B x\ .zoi.\ gi lo prenu je ke se sinxa be la'e zo'oi .\B p.\ cu cinmo lo se sinxa be la'e zo'oi .\B z.\ la'e zo'oi .\B x.
 
 \paragraph{English}
-A term of \F{Co'eJaCinmo} \B p \B z \B x exists iff the prenu which is represented by \B p feels/experiences (about \B x) \B z.
+A term of \F{Co'eJaCinmo} \B p \B z \B x exists iff the prenu which is represented by \B p feels/experiences (about \B x) the referent of \B z.
 
 \begin{code}
 Co'eJaCinmo : ∀ {a} → {A : Set a} → Prenu → Zilkai → A → Set a
