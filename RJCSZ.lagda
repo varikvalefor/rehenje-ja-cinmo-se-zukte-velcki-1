@@ -177,7 +177,7 @@ data Re'enjeJaCinmoSeZukte {a b}
   cnm : Zukte p sz
       → (sc : Zilkai)
       → Co'eJaCinmo p sc sz
-      → Stace-Zi'o p (Co'eJaCinmo p sc sz)
+      → Stace-Zi'o p $ Co'eJaCinmo p sc sz
       → Re'enjeJaCinmoSeZukte sz p
   smn : {B : Set b}
       → Zukte p sz
