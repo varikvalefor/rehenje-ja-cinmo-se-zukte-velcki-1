@@ -135,7 +135,7 @@ Stace-Zi'o : ∀ {a} → {A : Set a} → Prenu → A → Set a
 Stace-Zi'o = {!!}
 \end{code}
 
-\subsection{le se ctaipe Coke cumki ke re'enje ja cinmo se ctaipe / The Type of Possible Art}
+\subsection{le se ctaipe Coke cumki ke se zukte / The Type of Enactable Things}
 
 \begin{code}
 Ka'e-SeZukte : ∀ a → Set (Level.suc a)
