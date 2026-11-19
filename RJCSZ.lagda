@@ -47,6 +47,7 @@
 
 open import Level
   using (
+    zero;
     _⊔_
   )
 open import Function
@@ -198,7 +199,7 @@ module Dada where
                 Set (Level.suc $ Level.suc a) where
     field
       p : Prenu
-      rjcsz : Re'enjeJaCinmoSeZukte {b = Level.zero} {Level.zero} d p
+      rjcsz : Re'enjeJaCinmoSeZukte {b = zero} {zero} d p
       ns : Nonselsmu d p
 \end{code}
 
