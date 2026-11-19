@@ -288,6 +288,7 @@ A term of \F{Zi'oZi'oPruce} \B a \B s \B k exists iff \B k is some process/event
            (s : String)
            (z : Zilkai)
            (ksz : Ka'e-SeZukte a)
+           (zzp : Zi'oZi'oPruce a s ksz)
            (zuk : Zukte p ksz)
            (cm : Co'eJaCinmo p z ksz)
            (cms : Stace-Zi'o p $ Co'eJaCinmo p z ksz)
