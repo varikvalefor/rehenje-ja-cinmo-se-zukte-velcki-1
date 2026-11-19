@@ -125,10 +125,10 @@ Co'eJaCinmo = {!!}
 
 \subsection{le se ctaipe co su'u stace / The Type regarding Sincerity}
 \paragraph{la .lojban.}
-ni'o ga jo ctaipe la'e zoi zoi.\ \F{Stace-Zi'o} \B p \B z\ .zoi.\ gi lo prenu je ke se sinxa be la'e zo'oi .\B p.\ cu prane lo ka ce'u stace zi'o la'e zo'oi .\B z.
+ni'o ga jo ctaipe la'e zoi zoi.\ \F{Stace-Zi'o} \B p \B z\ .zoi.\ gi lo prenu je ke se sinxa be la'e zo'oi .\B p.\ cu prane lo ka ce'u stace zi'o la'e zo'oi .\B z.\sds  .i ku'i la .varik.\ na birti lo du'u xu kau frili cumki fa lo mapti je nu birti lo du'u xu kau lo prenu cu stace
 
 \paragraph{English}
-A term of \F{Stace-Zi'o} \B p \B z exists iff the prenu which is represented by \B p is perfectly sincere about \B z.
+A term of \F{Stace-Zi'o} \B p \B z exists iff the prenu which is represented by \B p is perfectly sincere about \B z.  But VARIK is not certain about that (being appropriately certain about whether prenu are sincere/honest is feasible).
 
 \begin{code}
 Stace-Zi'o : ∀ {a} → {A : Set a} → Prenu → A → Set a
