@@ -246,9 +246,9 @@ A term of \F{FackiSmuniLLM} \B s \B x \B p exists iff (\B x is the output of an 
 
 \begin{code}
   module _ {a b}
-           (p : Prenu)
            (A : Set a)
            (B : Set b)
+           (p : Prenu)
            (s : String)
            (zsml : Zukte p $ FackiSmuniLLM A s p)
            (sm : Smuni B (FackiSmuniLLM A s p) p)
